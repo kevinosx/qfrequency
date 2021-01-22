@@ -1,11 +1,22 @@
 html { background-color: #000; height: 100%; }
 
-body { background: none; display: flex; align-items: center; justify-content: center; height: 100%; }
+body { background: none; display: flex; flex-direction: column; height: 100%; }
+body.center-vertical { align-items: center; justify-content: center; }
 
 .logo-main { width: 100%; height: auto; max-width: 400px; }
 
-main { z-index: 1; padding: 40px; }
+.logo-secondary { width: 100px; height: auto; }
+
+.container { z-index: 1; }
+
+main, .site-header { z-index: 1; padding: 40px; }
+
+.site-header { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
 
 .bg-wrapper { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; overflow: hidden; }
 
 .bg { background-image: url(../images/bg2.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; overflow: hidden; }
+
+a { color: #14bee8; text-decoration: none; }
+
+a:hover { color: #fff; text-decoration: underline; }
