@@ -22,3 +22,5 @@ a { color: #14bee8; text-decoration: none; }
 a:hover { color: #fff; text-decoration: underline; }
 
 .video-grid > div { margin-bottom: 20px; }
+
+.home-page { padding-top: 100px; }
